@@ -16,16 +16,25 @@
     #checkBox, #submitBtn, .form-check-label, .card-header.download-header {
         display: none;
     }
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+    }
 </style>
 </head>
 <body>
-<div class="container text-center">
-    <h1>Майнкрафт скин <i class="bi bi-arrow-right"></i> Тотем</h1>
-</div>
-<div class="container text-center">
-    <div class="row">
-        <div class="col-lg-4 mx-auto">
-            <div class="container">
+<div class="center-container">
+    <div class="container">
+        <h1>Майнкрафт скин <i class="bi bi-arrow-right"></i> Тотем</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
                 <div class="card">
                     <div class="col-lg-12 col-6 mx-auto d-block">
                         <img style="image-rendering: pixelated;" id="canvasImg" class="card-img-top mx-auto d-block float-start rounded w-10" src="https://spea.cc/totem/blank.png">
