@@ -10,6 +10,9 @@
     #canvasImg {
         background: repeating-conic-gradient(#404040 0% 25%, transparent 0% 50%) 50% / 12.5% 12.5%
     }
+    #username {
+        display: none;
+    }
 </style>
 </head>
 <body>
@@ -28,10 +31,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Your Totem</h5>
                     <p class="card-text">Enter your Java username or skin file below and check whether you want overlays displayed or not, then press submit.</p>
-                    <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="username" placeholder="Steve">
-                    </div>
+                    <input type="hidden" id="username" value="Steve">
                     <div class="mb-3">
                         <label class="form-label" for="imageLoader">(or input a skin file)</label>
                         <input type="file" class="form-control" id="imageLoader" />
